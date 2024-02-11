@@ -1,0 +1,43 @@
+.background{
+    background-image: url(Images/background2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: 69px;
+}
+
+.blackLayover{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.683);
+    height: 100vh;
+    width: 50%;
+    border-top-right-radius: 450px;
+}
+
+.textContainer{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 2;
+    bottom: 175px;
+}
+
+.orangeBox{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 175px;
+    left: 70px;
+    background-color: rgb(255, 123, 0);
+    height: 225px;
+    width: 15px;
+}
+
+.scrollText{
+    font-size: 45px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 25px;
+}

@@ -1,0 +1,42 @@
+.navigation{
+    display: flex;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 69;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 69px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg{
+    width: 150px;
+    border-radius: 100px; 
+    position: fixed;    
+    z-index: 100;
+    top: 0;
+    left: 4px;
+}
+
+.links{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkText{
+    box-shadow: 1px orange;
+    text-decoration: underline orange 3px;
+    transition: 250ms;
+}
+
+.linkText:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px rgba(255, 166, 0, 0.655);
+
+}

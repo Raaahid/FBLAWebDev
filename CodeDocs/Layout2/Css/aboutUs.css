@@ -1,0 +1,91 @@
+.head {
+    text-align: center;
+}
+
+h1 {
+    text-decoration: dotted orange underline;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.programBoxHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.programBox {
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.line {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, orange 100px, rgba(255, 255, 255, 0));
+    transition: 0.5s;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.accessiblity{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    background-color: white;
+    border: 1px black solid;
+    gap: 30px;
+}
+
+.accessiblityRow{
+    gap: 30px;
+}
+
+
+.Impact{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 760px;
+    background-color: rgba(128, 0, 128, 0.434);
+    background-image: url(Images/impact.png);
+    align-items: center;
+}
+
+.support{
+    height: 80px;
+    width: 300px;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    font-family: 'montserrat';
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.support:hover{
+    cursor: pointer;
+    color: purple;
+}

@@ -1,0 +1,164 @@
+.midSectorContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-size: cover;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+
+.midSector{
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    border-radius: 20px;
+    right: 0;
+    margin-left: 10px;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 0 10px 10px;
+
+}
+
+.whyDonate{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.conty{
+    padding-left: 20px;
+    padding-top: 40px;
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+
+.h1{
+    text-decoration: underline orange 4px;
+}
+
+.h2{    
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.amountbtnsst{
+    display: flex;
+    flex-direction: column;
+}
+.amountBtnssl{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+    border: orange 2px solid;
+    font-weight: bold;
+    transition: 0.25s background-color;
+}
+
+button.clicked{
+    background-color: orange;
+}
+
+input{
+    width: 70px;
+    height: 20px;   
+    text-align: center; 
+    font-weight: bold;
+}
+
+.opt{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    border: #333 solid 1px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.opt:hover{
+    cursor: pointer;
+}
+
+.payconty{
+    display: flex;
+    height: 500px;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10px;
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    padding-top: 50px;
+}
+
+.paymentoptions{
+    margin-top: 30px;
+}
+
+#cause-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#cause-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+#cause-dropdown:hover #cause-dropdown-content {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+}
+
+#cause-dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+#cause-dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+#cause-btn{
+    width: 300px;
+    background-color: orange;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 166, 0, 0.562);
+}
+
+#displayValue{
+    text-align: center;
+}

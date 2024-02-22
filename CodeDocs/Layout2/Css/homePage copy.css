@@ -1,0 +1,262 @@
+.homeLayout{
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-height: 600px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imageContainer{
+    width: 1fr;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    gap: 10px;
+    margin-top: 100px;
+    gap: 30px;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.gridImg{
+    display: flex;
+    height: 150px;
+    width: 210px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridText1,
+.gridText2,
+.gridText3{
+    display: flex;
+    height: 150px;
+    width: 210px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: dashed white 2px solid;
+    animation-name: text-image;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.textContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 100vh;
+    max-width: 700px;
+    max-height: 700px;
+    background-color: black;
+    background-size: cover;
+    margin-top: 69px;
+    transform: rotate(-20deg);
+    left: 0;
+    z-index: -1;
+}
+
+.textContainer2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+    margin-top: auto;
+    margin-right: 100px;
+    gap: 30px;
+    padding-left: 90px;
+    align-items: center;
+
+    
+}
+
+.orangeBox{
+    position: absolute;
+    background-color: orange;
+    height: 350px;
+    width: 7px;
+    margin-top: 55px;
+    top: 150px;
+    left: 130px;
+}
+
+.text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    margin-top: 40px;
+    gap: 10px;
+    left: 160px;
+    top: 150px;
+}
+
+
+.h1{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.h2{
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.h3{
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    text-shadow: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 100px;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.donateBtn,
+.galaBtn{
+    width: 120px;
+    height: 50px;
+    background-image: linear-gradient(45deg, rgb(0, 0, 0) 100%, white);
+    border: white solid 2px;
+    color: white;
+    font-family: 'montserrat';
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.donateBtn:hover,
+.galaBtn:hover{
+    background-image: linear-gradient(45deg, orange 60%, white);
+    cursor: pointer;
+}
+
+.OurMission{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    text-align: center;
+}
+
+.mHeading{
+    font-size: 30px;
+    text-decoration: dotted orange underline 5px;
+}
+
+.mBody{
+    font-size: 20px;
+}
+
+.getInvolved{
+    background-color: orange;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    border: black 2px solid;
+}
+
+.gHeading{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: dashed black 4px underline;
+}
+
+.gBody{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.gBox{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background-image: url(Images/Inspiration1.jpg);
+    justify-content: end;
+    border: white solid 2px;
+    margin-bottom: 40px;
+}
+
+.gBox:hover{
+
+    .gBoxHead{
+        transform: translateY(-60px);
+    }
+    
+}
+
+.gBoxHead{
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.gBoxInfo{
+    display: flex;
+    background-color: purple;
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+    transition: 0.5s;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.newDislexicTextClass{
+    background-color: aqua;
+}
+
+.Newsletter {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, orange 70%, yellow);
+}
+

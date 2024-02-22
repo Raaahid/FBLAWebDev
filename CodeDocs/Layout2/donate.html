@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About Us</title>
+
+    <link rel="stylesheet" type="text/css" href="Css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="Css/General.css">
+    <link rel="stylesheet" type="text/css" href="Css/donate.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navigation">
+        <div class="links">
+            <div class="linkText"><a href="index.html" style="text-decoration: none;"> Home </a></div>
+            <div class="linkText"><div class="dropdown"></div><a href="aboutUs.html"> Programs </a></div>
+            <div class="linkText"><div class="dropdown"></div><div style="border-color: white;"><a href="donate.html"> Donate </a></div></div>
+            <div class="linkText"><a href="gala.html"> <div class="linkTextgala">Gala</div></a></div>
+        </div>
+        <div class="logo">
+            <img src="Images/Logo.jpg" class="logoImg">
+        </div>
+    </div>
+
+
+    <div class="midSectorContainer">
+        <div class="whyDonate">
+            <div class="conty">
+                <p class="h1"> Disabled America <br>Needs You </p>
+                <p class="h2"> Your contribution is not just a financial transaction; it is a direct investment in the lives of individuals with disabilities. <br> <br> <b>Every dollar </b> brings us closer to a more inclusive, accessible, and empowered America. Your support enables us to <br>provide crucial resources, advocacy, and opportunities that make a lasting impact. <br> <br>Join us in building a future where everyone, regardless of ability, can thrive and contribute fully to our society. </p>
+            </div>
+
+        </div>
+        
+        <div class="midSector">
+            
+            <div class="payconty">
+                
+                <p id="displayValue">Choose Your Amount</p>
+                <div class="amountBtnsst">
+                    <div class="amountBtnssl"> 
+                        <button onclick="changeValue(25)">$25</button> 
+                        <button onclick="changeValue(50)">$50</button>
+                        <button onclick="changeValue(100)">$100</button>
+                    </div>
+                    <div class="amountBtnssl"> 
+                        <button onclick="changeValue(150)">$150</button>
+                        <button onclick="changeValue(250)">$250</button> 
+                        <button onclick="changeValue(0)">$ <input type="number" id="custom" oninput="updateValue()"></button></div>
+                </div>
+
+                
+
+                <div id="cause-dropdown">
+                    <button id="cause-btn">Select Cause &#9660;</button>
+                    <div id="cause-dropdown-content">
+                        <a href="#" onclick="buttonClick(this)">Wherever Needed Most</a>
+                        <a href="#">Disabled Veterans</a>
+                        <a href="#">Special Education at Schools</a>
+                        <a href="#">Autism Research</a>
+                        <a href="#">Stepping Stones Shelters</a>
+                    </div>
+                </div>
+
+                <div  style=" display:flex; border: orange 2px solid; padding: 10px; align-items: center;"><input type="checkbox" class="Monthly"></input><b style="margin-right: 30px;">Make It Monthly</b></div>
+    
+                <div class="paymentoptions">
+                    <p >Quick Pay With</p>
+                    <div class="opt"><a href="https://pay.google.com/about/pay-each-other/"><img src="Images/gpay1.png" style="height: 30px;"></a></div>
+                    <div class="opt" style="background-color: rgb(255, 208, 0);"><a href="https://www.paypal.com/us/digital-wallet/send-receive-money/send-money?kid=p75883314412&gclid=CjwKCAiA29auBhBxEiwAnKcSqgGusWtcrrYwbzUgkwJQ6UO3GuG6NFaW34QYXldf-klM1ab_RjnJuhoCmb4QAvD_BwE&gclsrc=aw.ds"><img src="Images/paypal.png" style="height: 30px;"></a></div>
+                    <div class="opt"><img src="Images/apPay.png" style="height: 30px;"></div>
+                    
+                </div>
+
+                
+
+            </div>
+            
+        </div>
+        
+    </div>     
+
+
+    <script>
+        let currentValue = 0;
+    
+        function changeValue(amount) {
+          const button = event.target;
+    
+          if (button.classList.contains('clicked')) {
+            // If the button is active, subtract the value
+            currentValue -= amount;
+          } else {
+            // If the button is not active, add the value
+            currentValue += amount;
+          }
+    
+          // Toggle the 'active' class to change the style
+          button.classList.toggle('clicked');
+    
+          // Update the display value
+          document.getElementById('displayValue').innerText = `Donate: $${currentValue} to Stepping Stones Foundation`;
+        }
+
+        function updateValue() {
+        currentValue = parseInt(document.getElementById('custom').value) || 0;
+        updateDisplay();
+        }
+
+        function updateDisplay() {
+    document.getElementById('displayValue').textContent = `Current Value: $${currentValue}`;
+  }
+      </script>
+
+    
+</body>
+
+</html>
